@@ -10,32 +10,6 @@ const titleInput = document.getElementById("title-input");
 const dateInput = document.getElementById("date-input");
 const descriptionInput = document.getElementById("description-input");
 
-// stores all tasks along with their associated data
-// const taskData = []
-
-// EXAMPLE of To Do List items
-// const myTaskArr = [
-//   { task: "Walk the Dog", date: "22-04-2022" },
-//   { task: "Read some books", date: "02-11-2023" },
-//   { task: "Watch football", date: "10-08-2021" },
-// ];
-
-// localStorage offers methods for saving, retrieving, and deleting items
-// setItem() method saves an item
-// getItem() method retrieves item 
-// removeItem() method deletes item 
-// clear() method deletes All items
-// JSON.stringify() converts to string format
-// localStorage.setItem("data", JSON.stringify(myTaskArr)); // EXAMPLE OF LOCAL STORAGE IN USE
-
-// EXAMPLE of retrieving data items from myTaskArr array
-// const getTaskArr = localStorage.getItem("data")
-// console.log(getTaskArr) // printing result to console
-
-// JSON.parse() returns data back into an object
-// const getTaskArrObj = JSON.parse(localStorage.getItem('data'))
-// console.log(getTaskArrObj) // printing result to console
-
 // This storage will enable you to keep track of tasks, display them on the page, and save them to localStorage.
 const taskData = JSON.parse(localStorage.getItem("data")) ||[];
 
